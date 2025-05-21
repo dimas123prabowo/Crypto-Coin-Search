@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Coin List</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-image: url("BG.png");
+        background-size: cover; /* Agar gambar menutupi seluruh layar */
+        background-repeat: no-repeat; /* Tidak mengulang gambar */
+        background-position: center; /* Posisinya di tengah */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Div baru untuk background full-width -->
+    <div class="header-background">
+      <div class="container-header">
+        <div class="container-text">
+          <p>TRACK CRYPTO PRICES, STAY INFORMED</p>
+          <h1>Real-Time Crypto Prices Made Simple</h1>
+          <p>Live prices, trends & info on top cryptocurrencies.</p>
+        </div>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search Coin..." />
+          <button id="searchButton">Search</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-body">
+      <table class="table">
+        <thead>
+          <tr class="tabel-row">
+            <th class="name">Name</th>
+            <th class="symbol">Symbol</th>
+            <th class="price">Price (USD)</th>
+            <th class="change">Change (24h)</th>
+          </tr>
+        </thead>
+        <tbody id="coinTableBody">
+          <!-- Data will be injected here -->
+        </tbody>
+      </table>
+      <div class="pagination">
+        <span class="per-page">25 Per Page</span>
+        <div class="page-controls">
+          <button id="prevBtn">Prev</button>
+          <span id="pageIndicator">1</span>
+          <button id="nextBtn">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
